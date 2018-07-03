@@ -1,5 +1,5 @@
-let money = promp("Ваш бюджет!");
-let name = promp("Название Вашего магазина?")
+let money = prompt("Ваш бюджет!");
+let name = prompt("Название Вашего магазина?")
 
 let mainList = {
 	budget: money,
@@ -9,9 +9,9 @@ let mainList = {
 	open: false
 }
 
-mainList.shopGoods[0] = promp("Какой тип товаров будем продавать?");
-mainList.shopGoods[1] = promp("Какой тип товаров будем продавать?");
-mainList.shopGoods[2] = promp("Какой тип товаров будем продавать?");
+mainList.shopGoods[0] = prompt("Какой тип товаров будем продавать?");
+mainList.shopGoods[1] = prompt("Какой тип товаров будем продавать?");
+mainList.shopGoods[2] = prompt("Какой тип товаров будем продавать?");
 
 console.log(mainList.budget / 30);
 
@@ -27,7 +27,7 @@ console.log(mainList);
 // }
 
 // for (var i = 0; i <= 3; i++) {
-// 	i = prompt("Какой тип товаров будем продавать?", "");
+// 	i = promptt("Какой тип товаров будем продавать?", "");
 // 	shopGoods.push(i);
 // 	console.log(i);
 // 	alert(shopGoods);
