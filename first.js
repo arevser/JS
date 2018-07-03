@@ -21,7 +21,19 @@ let mainList = {
 // 	}
 // }
 let i = 0;
-while (i < 3) {
+// while (i < 3) {
+// 	i++;
+// 	let a = prompt("Какой тип товаров будем продавать?");
+// 	if ((typeof(a)) === "string" && (typeof(a)) !== null && a.length < 50 && a != ""){
+// 		console.log("OK!");
+// 		mainList.shopGoods[i] = a;
+// 	}
+// 	else{
+// 		console.log("Введите правильные данные!");
+// 	}
+// }
+
+do {
 	i++;
 	let a = prompt("Какой тип товаров будем продавать?");
 	if ((typeof(a)) === "string" && (typeof(a)) !== null && a.length < 50 && a != ""){
@@ -32,6 +44,7 @@ while (i < 3) {
 		console.log("Введите правильные данные!");
 	}
 }
+while (i < 3);
 
 if (time < 0){
 	console.log("Такого не может быть!");
