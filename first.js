@@ -1,5 +1,5 @@
 let money = prompt("Ваш бюджет!");
-let name = prompt("Название Вашего магазина?")
+let name = prompt("Название Вашего магазина?");
 let time = 19;
 
 let mainList = {
@@ -10,18 +10,7 @@ let mainList = {
 	open: false
 }
 
-for (let i = 0; i < 3; i++) {
-	let a = prompt("Какой тип товаров будем продавать?");
-	if ((typeof(a)) === "string" && (typeof(a)) !== null && a.length < 50 && a != ""){
-		console.log("OK!");
-		mainList.shopGoods[i] = a;
-	}
-	else{
-		console.log("Введите правильные данные!");
-	}
-}
-// let num =0;
-// while (num < 3) {
+// for (let i = 0; i < 3; i++) {
 // 	let a = prompt("Какой тип товаров будем продавать?");
 // 	if ((typeof(a)) === "string" && (typeof(a)) !== null && a.length < 50 && a != ""){
 // 		console.log("OK!");
@@ -31,6 +20,18 @@ for (let i = 0; i < 3; i++) {
 // 		console.log("Введите правильные данные!");
 // 	}
 // }
+let i = 0;
+while (i < 3) {
+	i++;
+	let a = prompt("Какой тип товаров будем продавать?");
+	if ((typeof(a)) === "string" && (typeof(a)) !== null && a.length < 50 && a != ""){
+		console.log("OK!");
+		mainList.shopGoods[i] = a;
+	}
+	else{
+		console.log("Введите правильные данные!");
+	}
+}
 
 if (time < 0){
 	console.log("Такого не может быть!");
