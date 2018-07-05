@@ -69,9 +69,12 @@ let mainList = {
 			mainList.shopItems = items.split(",");
 			mainList.shopItems.push(prompt("Подождите. еще ", ""));
 			mainList.shopItems.sort();
-			mainList.shopItems.forEach(function(items,i,shopItems){
-				console.log("У нас вы можете купить: " + items);
-			})
+			// mainList.shopItems.forEach(function(items,i,shopItems){
+			// 	console.log("У нас вы можете купить: " + items);
+			// })
+			for (key in mainList.shopItems){
+				console.log("Наш магазин включает в себя: " + mainList.shopItems[key]);
+			}
 		} else {
 			confirm("Введите товары!");
 			mainList.chooseShopItems();
