@@ -1,7 +1,7 @@
 let money,
 name,
 time,
-price
+price = 200
 
 function start() {
 	while (isNaN(money) || money == null || money == "") {
@@ -50,9 +50,23 @@ function workTime(time) {
 	}
 }
 
-workTime(18);
+//workTime(18);
 
-console.log(mainList.budget / 30);
+function countBudget(info_budget){
+	console.log(info_budget / 30);
+}
+
+//countBudget(mainList.budget);
+
+function discountPrice(price, discount){
+	if (discount === true){
+		console.log(price * 0.8);
+	} else {
+		console.log(price);
+	}
+}
+
+discountPrice(price, mainList.discount);
 
 console.log(mainList);
 
