@@ -3,6 +3,7 @@ name,
 time,
 price = 200
 
+
 function start() {
 	while (isNaN(money) || money == null || money == "") {
 		money = prompt("Ваш бюджет!");
@@ -66,7 +67,27 @@ function discountPrice(price, discount){
 	}
 }
 
-discountPrice(price, mainList.discount);
+//discountPrice(price, mainList.discount);
+
+
+function hiringEmployer(new_employers){
+	let ask_job = confirm("Хотели бы Вы у нас работать!");
+	if (ask_job === true){
+		new_employers = prompt("Ваши контактные данные", "");
+		mainList.employers = new_employers;
+	}
+}
+
+hiringEmployer();
+
+function askEmployers(){
+	for (let i = 0; i < 4; i++){
+		ask_name = prompt("Какое имя у сотрудника", "")
+		mainList.employers[i] = ask_name;
+	}
+}
+
+//askEmployers();
 
 console.log(mainList);
 
