@@ -82,8 +82,12 @@ function hiringEmployer(new_employers){
 
 function askEmployers(){
 	for (let i = 0; i < 4; i++){
-		ask_name = prompt("Какое имя у сотрудника", "")
-		mainList.employers[i] = ask_name;
+		let ask_name = prompt("Какое имя у сотрудника", "");
+		if ((typeof(ask_name)) === "string" && (typeof(ask_name)) !== null && ask_name.length < 50 && ask_name != ""){
+			mainList.employers[i] = i + " - " + ask_name;
+		} else {
+			i = i - 1;
+		}
 	}
 }
 
