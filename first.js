@@ -78,7 +78,7 @@ function hiringEmployer(new_employers){
 	}
 }
 
-hiringEmployer();
+//hiringEmployer();
 
 function askEmployers(){
 	for (let i = 0; i < 4; i++){
@@ -87,7 +87,7 @@ function askEmployers(){
 	}
 }
 
-//askEmployers();
+askEmployers();
 
 console.log(mainList);
 
